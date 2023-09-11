@@ -19,6 +19,8 @@ public class Main {
             fileWriter.writeUserData(user);
         } catch (UserEx | IOException e) {
             System.out.println("Ошибка: " + e.getMessage());
+        }finally {
+            System.out.println("Inside bloсk finally");
         }
     }
 }
